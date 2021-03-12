@@ -1,0 +1,217 @@
+$p-dark-blue: hsl(233, 26%, 24%);
+$p-lime-green: hsl(136, 65%, 51%);
+$p-bright-cyan: hsl(192, 70%, 51%);
+$p-dark-gray: hsl(0, 0%, 69%);
+
+
+$n-grayish-blue: hsl(233, 8%, 62%);
+$n-light-grayish-blue:hsl(220, 16%, 96%);
+$n-very-light-gray: hsl(0, 0%, 98%);
+$n-white: hsl(0, 0%, 100%);
+
+$base-mesaure: 1rem;
+
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Public Sans', sans-serif;
+}
+
+.section-3{
+    background-color: $n-light-grayish-blue;
+    padding-top: $base-mesaure;
+    padding-bottom: $base-mesaure;
+}
+
+.card-container{
+    width: 100%;
+    padding: 20px;
+}
+
+.title-container{
+    h1{
+        display: flex;
+        justify-content: center;
+        font-size: 2.2rem;
+        font-weight: 300;
+        color: $p-dark-blue;
+        margin-bottom: $base-mesaure;
+        margin-top: $base-mesaure * 2;
+    }
+    
+}
+
+.card{
+    background-color: $n-white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0.3rem;
+    border: none;
+    margin-bottom: $base-mesaure * 2;
+    .card-img{
+        width: 100%;
+        border-radius: 0.3rem 0.3rem 0rem 0rem ;
+        border: none;
+    }
+    .content-container{
+        padding: $base-mesaure * 2;
+        h3{
+            font-size: 0.75rem;
+            font-weight: 400;
+            color: $p-dark-gray;
+            padding-bottom: $base-mesaure;
+        }
+        h2{
+            font-size: 1.1rem;
+            font-weight: 300;
+            color: $p-dark-blue;
+            padding-bottom: $base-mesaure;
+            transition: color 1s ease;
+        }
+
+        p{
+            font-size: 0.85rem;
+            font-weight: 400;
+            color: $p-dark-gray;
+            padding-bottom: $base-mesaure;
+        }
+    }
+    &:hover{
+        cursor: pointer;
+        .content-container{
+            h2{
+                color: $p-lime-green;
+            }
+        }
+    }
+}
+
+
+.footer{
+    width: 100%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $p-dark-blue;
+    padding: $base-mesaure * 2;
+    .wraper{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .brand{
+            margin-bottom: $base-mesaure * 2;
+            width: 50%;
+            img{
+                width: 100%;
+            }
+        }
+        .social-media{
+            width: 80%;
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: $base-mesaure * 2;
+        }
+    }
+    .links{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        a{
+            margin-bottom: $base-mesaure * 0.7;
+            text-decoration: none;
+            font-weight: 300;
+            color: $n-white;
+        }
+    }
+    .cta{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: $base-mesaure * 2;
+        button{
+            background: rgb(71,224,116);
+            background: linear-gradient(51deg, rgba(71,224,116,1) 0%, rgba(44,184,219,1) 100%);            
+            width: 250px;
+            height: 50px;
+            color: $n-white;
+            border-radius: 30px;
+            border: none;
+            font-size: 20px;
+            font-weight: 700;
+        }
+        p{
+            margin-top: $base-mesaure * 2;
+            text-align: center;
+            font-weight: 700;
+            color: $p-dark-gray;
+        }
+    }
+}
+
+//Desktop 992px
+@media only screen and ( min-width: 992px ){
+    .title-container{
+        padding-left: 150px;
+        h1{
+            display: flex;
+            justify-content: flex-start;
+            font-size: 2.5rem;
+        }
+    }
+    .card-container{
+        display: flex;
+        padding-left: 150px;
+        padding-right: 150px;
+        .card{
+            margin: 10px;
+            width: 400px;
+        }
+    } 
+    
+    .footer{
+        display: flex;
+        flex-direction: unset;
+        justify-content: space-between;
+        width: 100%;
+        padding-left: 150px;
+        padding-right: 150px;
+        .wraper{
+            display: flex;
+            flex-direction: column;
+            width: unset;    
+            align-items: baseline;
+            img{
+                padding-right: $base-mesaure * 0.5;
+            }
+        }
+        .links{
+            text-align: left;
+            font-size: 0.85rem;
+        }
+        .cta{
+            display: flex;
+            align-items: flex-end;
+            margin-top: 0;
+            button{
+                width: 180px;
+                height: 50px;
+                font-size: 0.85rem;
+            }
+            p{
+                font-size: 0.85rem;
+
+            }
+        }
+    }
+
+
+}
+
+
