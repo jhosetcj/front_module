@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: bold;
+}
+
+.border-orange {
+  border: solid 5px orange;
+}
+
+.border-dorado {
+  border: solid 5px burlywood;
+}
+
+.border-azul {
+  border: solid 5px blue;
+}
+
+.border-morado {
+  border: solid 5px purple;
+}
+
+.border-rosa {
+  border: solid 5px pink;
+}
+
+.border-verde {
+  border: solid 5px green;
+}
+
+.border-amarillo {
+  border: solid 5px #ffe600;
+}
+
+.border-rojo {
+  border: solid 5px red;
+}
+/*# sourceMappingURL=styles.css.map */
