@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEV Community 👩‍💻👨‍💻</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://res.cloudinary.com/practicaldev/image/fetch/s--E8ak4Hr1--/c_limit,f_auto,fl_progressive,q_auto,w_32/https://dev-to.s3.us-east-2.amazonaws.com/favicon.ico">
+    <link rel="stylesheet" href="/css/sytles.css">
+    <link rel="stylesheet" href="/bootstrap_rectangles/css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar navbar-light navbar-expand-lg">
+        <div class="container-fluid wrapper-width">
+            <div class="row">
+                <button class="navbar-toggler d-flex align-center-items" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="d-md-none navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="https://desafio-de-maquetado2.vercel.app/Images/img-nav/new-logo.svg" alt="">
+                </a>
+                <form class="form-inline d-none d-md-block">
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                </form>
+            </div>
+
+            <div class="row">
+                <button type="button" class="d-none d-md-block btn">Write a post</button>
+
+                <a class="d-md-none button-icon" href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="ae54tlfu41t7afnmxhl8rkuqq71bh6od" class="crayons-icon"><title id="ae54tlfu41t7afnmxhl8rkuqq71bh6od">Search</title>
+                        <path d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0111 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 01-1.969 5.617zm-2.006-.742A6.977 6.977 0 0018 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 004.875-1.975l.15-.15z"></path>
+                    </svg>
+                </a>
+                <a href="" class="button-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="ap96r28fh9pj8xdthjim17b8vwvxc801" class="crayons-icon"><title id="ap96r28fh9pj8xdthjim17b8vwvxc801">Connect</title>
+                        <path d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10H2l2.929-2.929A9.969 9.969 0 012 12zm4.828 8H12a8 8 0 10-8-8c0 2.152.851 4.165 2.343 5.657l1.414 1.414-.929.929zM8 13h8a4 4 0 11-8 0z"></path>
+                    </svg>
+                </a>
+                <a href="" class="button-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="aa2rkw6svgg9p0xlcih3quucnn1wl0if" class="crayons-icon"><title id="aa2rkw6svgg9p0xlcih3quucnn1wl0if">Notifications</title>
+                        <path d="M20 17h2v2H2v-2h2v-7a8 8 0 1116 0v7zm-2 0v-7a6 6 0 10-12 0v7h12zm-9 4h6v2H9v-2z"></path>
+                    </svg>
+                </a>
+                <a href="" class="button-image-profile">
+                    <img class="image-profile" src="https://res.cloudinary.com/practicaldev/image/fetch/s--glJYjYcU--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/595849/c77cfee6-79aa-44db-8328-0d3a5eb664ba.jpeg" alt="">
+                </a>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid  blog-content d-flex justify-content-center">
+        <div class="row wrapper-width">
+            <div class="d-none d-md-block col-md-3 col-lg-2 pr-md-0">
+                <div class="container">
+                    <div class="row wrapper-sections flex-column">
+                        <div class="button d-flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="24" height="24" role="img" aria-labelledby="ab5m3usulro2rlxwk3mt3gf7v6pxjgid" class="crayons-icon crayons-icon--default"><title id="ab5m3usulro2rlxwk3mt3gf7v6pxjgid">Home</title>
+                                <g class="nc-icon-wrapper">
+                                    <path fill="#A0041E" d="M13.344 18.702h-2a.5.5 0 01-.5-.5v-7a.5.5 0 01.5-.5h2a.5.5 0 01.5.5v7a.5.5 0 01-.5.5z"></path>
+                                    <path fill="#FFE8B6" d="M9 20L22 7l13 13v17H9z"></path>
+                                    <path fill="#FFCC4D" d="M22 20h1v16h-1z"></path>
+                                    <path fill="#66757F" d="M35 21a.997.997 0 01-.707-.293L22 8.414 9.707 20.707a1 1 0 11-1.414-1.414l13-13a.999.999 0 011.414 0l13 13A.999.999 0 0135 21z"></path>
+                                    <path fill="#66757F" d="M22 21a.999.999 0 01-.707-1.707l6.5-6.5a1 1 0 111.414 1.414l-6.5 6.5A.997.997 0 0122 21z"></path>
+                                    <path fill="#C1694F" d="M14 30h4v6h-4z"></path>
+                                    <path fill="#55ACEE" d="M14 21h4v4h-4zm12.5 0h4v4h-4zm0 9h4v4h-4z"></path>
+                                    <path fill="#5C913B" d="M37.5 37.5A1.5 1.5 0 0136 39H8a1.5 1.5 0 010-3h28a1.5 1.5 0 011.5 1.5z"></path>
+                                </g>
+                            </svg>
+                            <h5 class="d-flex">Home</h5>
+                        </div>
+                        <div class="button d-flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="24" height="24">
+                                <g class="nc-icon-wrapper">
+                                    <path fill="#67757F" d="M39 24c0 2.209-1.791 2-4 2H9c-2.209 0-4 .209-4-2l2-12c.125-1.917 1.791-4 4-4h22c2.209 0 3.791 2.208 4 4l2 12z"></path>
+                                    <path fill="#CCD6DD" d="M32 17a2 2 0 01-2 2H14a2 2 0 01-2-2V9a2 2 0 012-2h16a2 2 0 012 2v8z"></path>
+                                    <path fill="#E1E8ED" d="M34 21a2 2 0 01-2 2H12a2 2 0 01-2-2v-8a2 2 0 012-2h20a2 2 0 012 2v8z"></path>
+                                    <path fill="#F5F8FA" d="M36 25a2 2 0 01-2 2H10a2 2 0 01-2-2v-8a2 2 0 012-2h24a2 2 0 012 2v8z"></path>
+                                    <path fill="#9AAAB4" d="M39 35a4 4 0 01-4 4H9a4 4 0 01-4-4V24a4 4 0 014-4h26a4 4 0 014 4v11z"></path>
+                                    <path fill="#67757F" d="M18 16zm0 0z"></path>
+                                    <path fill="#FCAB40" d="M26 5h-5a2 2 0 00-2 2v1h4a2 2 0 012 2h1a2 2 0 002-2V7a2 2 0 00-2-2z"></path>
+                                    <path fill="#5DADEC" d="M22 9h-5a2 2 0 00-2 2v1h4a2 2 0 012 2h1a2 2 0 002-2v-1a2 2 0 00-2-2z"></path>
+                                    <path fill="#E75A70" d="M20 16a2 2 0 01-2 2h-5a2 2 0 01-2-2v-1a2 2 0 012-2h5a2 2 0 012 2v1z"></path>
+                                    <path fill="#67757F" d="M29 32a2 2 0 01-2 2H17a2 2 0 01-2-2v-5a2 2 0 012-2h10a2 2 0 012 2v5zm-11-4z"></path>
+                                    <path fill="#E1E8ED" d="M27 31a1 1 0 01-1 1h-8a1 1 0 01-1-1v-3a1 1 0 011-1h8a1 1 0 011 1v3z"></path>
+                                </g>
+                            </svg>
+                            <h5 class="d-flex">Reading List</h5>
+                        </div>
+                        <div class="button d-flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="24" height="24">
+                                <g class="nc-icon-wrapper">
+                                    <path fill="#FFD983" d="M36 4H14a4 4 0 00-4 4v24H8a4 4 0 000 8h24a4 4 0 004-4V12a4 4 0 000-8z"></path>
+                                    <path fill="#E39F3D" d="M12 14h24v-2H14l-2-1z"></path>
+                                    <path fill="#FFE8B6" d="M14 4a4 4 0 00-4 4v24.555A3.955 3.955 0 008 32a4 4 0 104 4V11.445c.59.344 1.268.555 2 .555a4 4 0 000-8z"></path>
+                                    <path fill="#C1694F" d="M16 8a2 2 0 11-4.001-.001A2 2 0 0116 8m-6 28a2 2 0 11-4.001-.001A2 2 0 0110 36m24-17a1 1 0 01-1 1H15a1 1 0 010-2h18a1 1 0 011 1m0 4a1 1 0 01-1 1H15a1 1 0 110-2h18a1 1 0 011 1m0 4a1 1 0 01-1 1H15a1 1 0 110-2h18a1 1 0 011 1m0 4a1 1 0 01-1 1H15a1 1 0 110-2h18a1 1 0 011 1"></path>
+                                </g>
+                            </svg>
+                            <h5 class="d-flex">Listings</h5>
+                        </div>
+                        <div class="button d-flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="24" height="24">
+                                <g class="nc-icon-wrapper">
+                                    <path fill="#292F33" d="M10 19h24v2H10zm15 15c0 2.208-.792 4-3 4-2.209 0-3-1.792-3-4s.791-2 3-2c2.208 0 3-.208 3 2z"></path>
+                                    <path fill="#66757F" d="M22 35c-6.627 0-10 1.343-10 3v2h20v-2c0-1.657-3.373-3-10-3z"></path>
+                                    <path fill="#99AAB5" d="M22 4a9 9 0 00-9 9v7h18v-7a9 9 0 00-9-9z"></path>
+                                    <g fill="#292F33" transform="translate(4 4)">
+                                        <circle cx="15.5" cy="2.5" r="1.5"></circle>
+                                        <circle cx="20.5" cy="2.5" r="1.5"></circle>
+                                        <circle cx="17.5" cy="6.5" r="1.5"></circle>
+                                        <circle cx="22.5" cy="6.5" r="1.5"></circle>
+                                        <circle cx="12.5" cy="6.5" r="1.5"></circle>
+                                        <circle cx="15.5" cy="10.5" r="1.5"></circle>
+                                        <circle cx="10.5" cy="10.5" r="1.5"></circle>
+                                        <circle cx="20.5" cy="10.5" r="1.5"></circle>
+                                        <circle cx="25.5" cy="10.5" r="1.5"></circle>
+                                        <circle cx="17.5" cy="14.5" r="1.5"></circle>
+                                        <circle cx="22.5" cy="14.5" r="1.5"></circle>
+                                        <circle cx="12.5" cy="14.5" r="1.5"></circle>
+                                    </g>
+                                    <path fill="#66757F" d="M13 19.062V21c0 4.971 4.029 9 9 9s9-4.029 9-9v-1.938H13z"></path>
+                                    <path fill="#66757F" d="M34 18a1 1 0 00-1 1v2c0 6.074-4.925 11-11 11s-11-4.926-11-11v-2a1 1 0 00-2 0v2c0 7.18 5.82 13 13 13s13-5.82 13-13v-2a1 1 0 00-1-1z"></path>
+                                </g>
+                            </svg>
+                            <h5 class="d-flex">Podcasts</h5>
+                        </div>
+                        <div class="button d-flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="24" height="24">
+                                <g transform="translate(4 4)">
+                                    <path fill="#31373D" d="M34.074 18l-4.832 3H28v-4c0-.088-.02-.169-.026-.256C31.436 15.864 34 12.735 34 9a8 8 0 00-16.001 0c0 1.463.412 2.822 1.099 4H14.92c.047-.328.08-.66.08-1a7 7 0 10-14 0 6.995 6.995 0 004 6.317V29a4 4 0 004 4h15a4 4 0 004-4v-3h1.242l4.832 3H35V18h-.926zM28.727 3.977a5.713 5.713 0 012.984 4.961L28.18 8.35a2.276 2.276 0 00-.583-.982l1.13-3.391zm-.9 6.342l3.552.592a5.713 5.713 0 01-4.214 3.669 3.985 3.985 0 00-1.392-1.148l.625-2.19a2.425 2.425 0 001.429-.923zM26 3.285c.282 0 .557.027.828.067l-1.131 3.392c-.404.054-.772.21-1.081.446L21.42 5.592A5.703 5.703 0 0126 3.285zM20.285 9c0-.563.085-1.106.236-1.62l3.194 1.597-.002.023c0 .657.313 1.245.771 1.662L23.816 13h-1.871a5.665 5.665 0 01-1.66-4zm-9.088-.385A4.64 4.64 0 0112.667 12c0 .344-.043.677-.113 1H10.1c.145-.304.233-.641.233-1a2.32 2.32 0 00-.392-1.292l1.256-2.093zM8 7.333c.519 0 1.01.105 1.476.261L8.22 9.688c-.073-.007-.145-.022-.22-.022a2.32 2.32 0 00-1.292.392L4.615 8.803A4.64 4.64 0 018 7.333zM3.333 12c0-.519.105-1.01.261-1.477l2.095 1.257c-.007.073-.022.144-.022.22 0 .75.36 1.41.91 1.837a3.987 3.987 0 00-1.353 1.895C4.083 14.881 3.333 13.533 3.333 12z"></path>
+                                    <circle fill="#8899A6" cx="24" cy="19" r="2"></circle>
+                                    <circle fill="#8899A6" cx="9" cy="19" r="2"></circle>
+                                    <path fill="#8899A6" d="M24 27a2 2 0 00-2-2H11a2 2 0 00-2 2v6a2 2 0 002 2h11a2 2 0 002-2v-6z"></path>
+                                </g>
+                            </svg>
+                            <h5 class="d-flex">Videos</h5>
+                        </div>
+                        <div class="button d-flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="24" height="24">
+                                <g class="nc-icon-wrapper">
+                                    <path fill="#FFD983" d="M36.017 24.181L21.345 9.746C20.687 9.087 19.823 9 18.96 9H8.883C7.029 9 6 10.029 6 11.883v10.082c0 .861.089 1.723.746 2.38L21.3 39.017a3.287 3.287 0 004.688 0l10.059-10.088c1.31-1.312 1.28-3.438-.03-4.748zm-23.596-8.76a1.497 1.497 0 11-2.118-2.117 1.497 1.497 0 012.118 2.117z"></path>
+                                    <path fill="#D99E82" d="M13.952 11.772a3.66 3.66 0 00-5.179 0 3.663 3.663 0 105.18 5.18 3.664 3.664 0 00-.001-5.18zm-1.53 3.65a1.499 1.499 0 11-2.119-2.12 1.499 1.499 0 012.119 2.12z"></path>
+                                    <path fill="#C1694F" d="M12.507 14.501a1 1 0 11-1.415-1.414l8.485-8.485a1 1 0 111.415 1.414l-8.485 8.485z"></path>
+                                </g>
+                            </svg>
+                            <h5 class="d-flex">Tags</h5>
+                        </div>
+                    </div>
+                    <div class="row wrapper-tags">
+                        <div class="d-flex justify-content-between w-100 mb-md-2">
+                            <h4>My Tags</h4>
+                            <a href="">
+                                <img src="https://desafio-de-maquetado2.vercel.app/Images/tagsDashboard.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="d-flex flex-column wrapper-buttons-tags">
+                            <a class="button-tags" href="">#javascript</a>
+                            <a class="button-tags" href="">#react</a>
+                            <a class="button-tags" href="">#css</a>
+                            <a class="button-tags" href="">#opensource</a>
+                            <a class="button-tags" href="">#aws</a>
+                            <a class="button-tags" href="">#git</a>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-12 col-md-9 col-lg-7 p-0 pr-md-3 pl-md-3">
+                <div class="container-fluid p-0">
+
+                    <div class="menu-posts d-flex justify-content-between pt-md-0 pl-md-0">
+                        <div>
+                            <h3>Posts</h3>
+                        </div>
+                        <div class="d-none d-md-block">
+                            <div class="menu-posts-items d-flex">
+                                <a href=""><h5>Feed</h5></a>
+                                <a href=""><h5>Week</h5></a>
+                                <a href=""><h5>Month</h5></a>
+                                <a href=""><h5>Year</h5></a>
+                                <a href=""><h5>Infinity</h5></a>
+                                <a href=""><h5>Latest</h5></a>
+                            </div>
+                        </div>
+
+                        <div class="dropdown d-md-none">
+                            <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Feed
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">                           
+                                <a class="dropdown-item" href=""><h5>Feed</h5></a>
+                                <a class="dropdown-item" href=""><h5>Week</h5></a>
+                                <a class="dropdown-item" href=""><h5>Month</h5></a>
+                                <a class="dropdown-item" href=""><h5>Year</h5></a>
+                                <a class="dropdown-item" href=""><h5>Infinity</h5></a>
+                                <a class="dropdown-item" href=""><h5>Latest</h5></a>
+                            </div>
+                        </div>
+
+
+                        
+                    </div>
+
+                    <div class="cards-wrapper">
+
+                        <div class="card card-principal">
+                            <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--KE-aNspA--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/82s6gsr763wlq2e74wsr.jpeg" class="card-img-top" alt="...">
+    
+                            <div class="card-body">
+                                <div class="wrapper-writter d-flex">
+                                    <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--rupM3g-_--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/595879/6a59eaf0-9c65-4d23-915a-bbe4ee32431c.jpeg" alt="" width="40" height="40">
+                                    <div>
+                                        <h6>Krishna Nigalye</h6>
+                                        <h7>Mar 15 (17 hours ago)</h7>
+                                    </div>                                
+                                </div>
+                                <h1>How JavaScript really works?</h1>
+                                <div class="wrapper-tags d-flex">
+                                    <h6>#html</h6>
+                                    <h6>#css</h6>
+                                    <h6>#javasript</h6>
+                                    <h6>#portfolio</h6>
+                                </div>
+                                <div class="wrapper-buttons d-flex justify-content-between">
+                                    <div class="wrapper-actions d-flex">
+                                        <button class="d-flex">
+                                            <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z"></path></svg>
+                                            <h8 class="d-none d-md-block">18 reactions</h8>
+                                            <h8 class="d-md-none">18</h8>
+                                        </button>
+                                        <button class="d-flex">
+                                            <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path></svg>
+                                            <h8 class="d-none d-md-block">3 comment</h8>
+                                            <h8 class="d-md-none">3</h8>
+                                        </button>
+                                    </div>
+                                    <div class="wrapper-engagement">
+                                        <h9>12 min read</h9>
+                                        <button class="button-save">Save</button>
+                                    </div>
+                                </div>
+    
+                            </div>
+                        </div>
+    
+                        <div class="card card-secondary">
+                            <div class="card-body">
+                                <div class="wrapper-writter d-flex">
+                                    <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--qr_Rigam--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/75714/b0158eeb-ee34-4382-9afd-ca9f9bede62c.JPG" alt="" width="40" height="40">
+                                    <div>
+                                        <h6>Oleksii Trekhleb</h6>
+                                        <h7>Mar 15 (1 hour ago)</h7>
+                                    </div>                                
+                                </div>
+                                <h2>GYRO-WEB: ACCESSING THE DEVICE ORIENTATION IN JAVASCRIPT</h2>
+                                <div class="wrapper-tags d-flex">
+                                    <h6>#webdev</h6>
+                                    <h6>#css</h6>
+                                    <h6>#javasript</h6>
+                                    <h6>#html</h6>
+                                </div>
+                                <div class="wrapper-buttons d-flex justify-content-between">
+                                    <div class="wrapper-actions d-flex">
+                                        <button class="d-flex">
+                                            <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z"></path></svg>
+                                            <h8 class="d-none d-md-block">27 reactions</h8>
+                                            <h8 class="d-md-none">27</h8>
+                                        </button>
+                                        <button class="d-flex">
+                                            <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path></svg>
+                                            <h8 class="d-none d-md-block">4 comment</h8>
+                                            <h8 class="d-md-none">4</h8>
+                                        </button>
+                                    </div>
+                                    <div class="wrapper-engagement">
+                                        <h9>12 min read</h9>
+                                        <button class="button-save">Save</button>
+                                    </div>
+                                </div>
+    
+                            </div>
+                        </div>
+
+                        <div class="card card-secondary">
+                            <div class="card-body">
+                                <div class="wrapper-writter d-flex">
+                                    <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--017_NvpR--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/551732/0bc7a7fb-f3d6-4626-a491-8fbc3a74ae08.jpg" alt="" width="40" height="40">
+                                    <div>
+                                        <h6>Monalisha Mondol</h6>
+                                        <h7>Mar 14 (17 hours ago)</h7>
+                                    </div>                                
+                                </div>
+                                <h2>Create Modern Navigation Bar with logo using HTML, CSS, and Bootstrap</h2>
+                                <div class="wrapper-tags d-flex">
+                                    <h6>#html</h6>
+                                    <h6>#css</h6>
+                                    <h6>#javasript</h6>
+                                    <h6>#react</h6>
+                                </div>
+                                <div class="wrapper-buttons d-flex justify-content-between">
+                                    <div class="wrapper-actions d-flex">
+                                        <button class="d-flex">
+                                            <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z"></path></svg>
+                                            <h8 class="d-none d-md-block">20 reactions</h8>
+                                            <h8 class="d-md-none">20</h8>
+                                        </button>
+                                        <button class="d-flex">
+                                            <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path></svg>
+                                            <h8 class="d-none d-md-block">8 comment</h8>
+                                            <h8 class="d-md-none">8</h8>
+                                        </button>
+                                    </div>
+                                    <div class="wrapper-engagement">
+                                        <h9>12 min read</h9>
+                                        <button class="button-save">Save</button>
+                                    </div>
+                                </div>
+    
+                            </div>
+                        </div>
+
+
+                        <div class="card card-secondary">
+                            <div class="card-body">
+                                <div class="wrapper-writter d-flex">
+                                    <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--dAmoXHO3--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/405854/e2c4f335-3bd2-4b11-bab6-578c25060b62.jpg" alt="" width="40" height="40">
+                                    <div>
+                                        <h6>Kritika Srivastava</h6>
+                                        <h7>Mar 14 (17 hours ago)</h7>
+                                    </div>                                
+                                </div>
+                                <h2>How to Deploy JavaScript/React Apps to Netlify through CLI(Part 2)</h2>
+                                <div class="wrapper-tags d-flex">
+                                    <h6>#html</h6>
+                                    <h6>#css</h6>
+                                    <h6>#javasript</h6>
+                                    <h6>#netfly</h6>
+                                </div>
+                                <div class="wrapper-buttons d-flex justify-content-between">
+                                    <div class="wrapper-actions d-flex">
+                                        <button class="d-flex">
+                                            <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z"></path></svg>
+                                            <h8 class="d-none d-md-block">reactions</h8>
+                                            <h8 class="d-md-none">18</h8>
+                                        </button>
+                                        <button class="d-flex">
+                                            <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path></svg>
+                                            <h8 class="d-none d-md-block">comment</h8>
+                                            <h8 class="d-md-none">3</h8>
+                                        </button>
+                                    </div>
+                                    <div class="wrapper-engagement">
+                                        <h9>12 min read</h9>
+                                        <button class="button-save">Save</button>
+                                    </div>
+                                </div>
+    
+                            </div>
+                        </div>
+
+                        <div class="card card-secondary">
+                            <div class="card-body">
+                                <div class="wrapper-writter d-flex">
+                                    <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--x0RBvyqL--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/194630/219dd9d5-c690-4996-a552-110518583eeb.JPG" alt="" width="40" height="40">
+                                    <div>
+                                        <h6>Monalisha Mondol</h6>
+                                        <h7>Mar 13 (17 hours ago)</h7>
+                                    </div>                                
+                                </div>
+                                <h2>Microservices in 4 minutes - Introduction to Microservices</h2>
+                                <div class="wrapper-tags d-flex">
+                                    <h6>#html</h6>
+                                    <h6>#css</h6>
+                                    <h6>#javasript</h6>
+                                    <h6>#cloud</h6>
+                                </div>
+                                <div class="wrapper-buttons d-flex justify-content-between">
+                                    <div class="wrapper-actions d-flex">
+                                        <button class="d-flex">
+                                            <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z"></path></svg>
+                                            <h8 class="d-none d-md-block">5 reactions</h8>
+                                            <h8 class="d-md-none">5</h8>
+                                        </button>
+                                        <button class="d-flex">
+                                            <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path></svg>
+                                            <h8 class="d-none d-md-block">1 comment</h8>
+                                            <h8 class="d-md-none">1</h8>
+                                        </button>
+                                    </div>
+                                    <div class="wrapper-engagement">
+                                        <h9>12 min read</h9>
+                                        <button class="button-save">Save</button>
+                                    </div>
+                                </div>
+    
+                            </div>
+                        </div>
+
+                        <div class="card card-secondary">
+                            <div class="card-body">
+                                <div class="wrapper-writter d-flex">
+                                    <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--L9ll2MCk--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/595829/998c5f0e-02ca-4658-a1dc-f75d1eea4e1c.jpeg" alt="" width="40" height="40">
+                                    <div>
+                                        <h6>Sebastian Rath</h6>
+                                        <h7>Mar 14 (22 hours ago)</h7>
+                                    </div>                                
+                                </div>
+                                <h2>SnowFS ❄️ Let's bring version control to graphic projects</h2>
+                                <div class="wrapper-tags d-flex">
+                                    <h6>#html</h6>
+                                    <h6>#css</h6>
+                                    <h6>#javasript</h6>
+                                    <h6>#portfolio</h6>
+                                </div>
+                                <div class="wrapper-buttons d-flex justify-content-between">
+                                    <div class="wrapper-actions d-flex">
+                                        <button class="d-flex">
+                                            <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z"></path></svg>
+                                            <h8 class="d-none d-md-block">33 reactions</h8>
+                                            <h8 class="d-md-none">33</h8>
+                                        </button>
+                                        <button class="d-flex">
+                                            <svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path></svg>
+                                            <h8 class="d-none d-md-block">12 comment</h8>
+                                            <h8 class="d-md-none">12</h8>
+                                        </button>
+                                    </div>
+                                    <div class="wrapper-engagement">
+                                        <h9>12 min read</h9>
+                                        <button class="button-save">Save</button>
+                                    </div>
+                                </div>
+    
+                            </div>
+                        </div>
+                        
+
+                    </div>
+
+                    
+
+                </div>
+            </div>
+
+            <div class="d-none d-lg-block col-lg-3 green p-0">
+                <div class="list-stories">
+                    <img src="https://dev-to-uploads.s3.amazonaws.com/i/vuoa6jsh5uhy32ehpizb.png" alt="" width="100%">
+                    <div>
+                        <div class="stories-cards">
+                            <a href=""><h3> <b>Stories (122)</b> </h3></a>                    
+                        </div>
+                        <div class="stories-cards">
+                            <a href=""><h5>SheCoded 2021 — Stories From Women Building Software and the Allies Supporting Them</h5></a>                    
+                        </div>
+                        <div class="stories-cards">
+                            <a href=""><h5>Happy International Women's Day to the Women Building Online Community 💖</h5></a>                    
+                        </div>
+                        <div class="stories-cards">
+                            <a href=""><h5>Nevertheless, HomegirlHacker Coded in 2021!</h5></a>                    
+                        </div>
+                        <div class="stories-cards">
+                            <a href=""><h5>Nevertheless, Sigute Coded in 2020/2021!</h5></a>                    
+                        </div>
+                        <div class="stories-cards">
+                            <a href=""><h5>Resilience is key to my success </h5></a>                    
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <a class="btn btn-primary" href=""> <b>Share your Story</b></a>
+                        <a class="btn btn-secondary" href=""> <b>Se all posts</b></a>
+                    </div>                   
+                </div>
+
+                <div class="list-stories mt-md-3">
+                    <div class="d-flex justify-content-between stories-cards">
+                        <a href=""><h3>Listings</h3></a>
+                        <a class="active" href="">see all</a>                    
+                    </div>
+                    <div class="stories-cards">
+                        <a href=""><h5>How to Do a Device Based Code Split in React</h5></a>  
+                        <p>misc</p>                  
+                    </div>
+                    <div class="stories-cards"">
+                        <a href=""><h5>How to Do a Device Based Code Split in React</h5></a>  
+                        <p>misc</p>                  
+                    </div>
+                    <div class="stories-cards"">
+                        <a href=""><h5>How to Do a Device Based Code Split in React</h5></a>  
+                        <p>misc</p>                  
+                    </div>
+                    <div class="stories-cards"">
+                        <a href=""><h5>How to Do a Device Based Code Split in React</h5></a>  
+                        <p>misc</p>                  
+                    </div>
+                    <div class="stories-cards"">
+                        <a href=""><h5>How to Do a Device Based Code Split in React</h5></a>  
+                        <p>misc</p>                  
+                    </div>
+                    <div class="stories-cards"">
+                        <a href="">Create a Listing</a>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="d-flex justify-content-center">
+        
+        <div class="row d-flex flex-column footer-width"">
+            <div class="d-flex justify-content-center">
+            <div class="d-flex justify-content-center flex-wrap justify-content-evenly">
+                <a href="">Home</a>
+                <a href="">Reading List</a>
+                <a href="">Listings</a>
+                <a href="">Podcast</a>
+                <a href="">Videos</a>
+                <a href="">Tags</a>
+                <a href="">Code of Conduct</a>
+                <a href="">FAQ</a>
+                <a href="">DEV Shop</a>
+                <a href="">Sponsors</a>
+                <a href="">About</a>
+                <a href="">Privacy Policy</a>
+                <a href="">Terms of use</a>
+                <a href="">Contact</a>
+                <a href="">Write a post</a>
+            </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <a href="https://twitter.com/thepracticaldev" target="blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="amarz8fmn2glmpcwj20jbc0e3q6ooemw" class="crayons-icon"><title id="amarz8fmn2glmpcwj20jbc0e3q6ooemw">Twitter</title>
+                        <path class="icon" d="M22.162 5.656a8.383 8.383 0 01-2.402.658A4.196 4.196 0 0021.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 00-7.126 3.814 11.874 11.874 0 01-8.62-4.37 4.168 4.168 0 00-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 01-1.894-.523v.052a4.185 4.185 0 003.355 4.101 4.211 4.211 0 01-1.89.072A4.185 4.185 0 007.97 16.65a8.395 8.395 0 01-6.191 1.732 11.83 11.83 0 006.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.495 8.495 0 002.087-2.165l-.001-.001z" fill="#65bbf2"></path>
+                    </svg>
+                </a>
+                <a href="https://www.facebook.com/thepracticaldev" target="blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="ak65gurqgkmj8ovgk1gbnqcp8d3tw6tg" class="crayons-icon"><title id="ak65gurqgkmj8ovgk1gbnqcp8d3tw6tg">Facebook</title>
+                        <path class="icon" d="M15.402 21v-6.966h2.333l.349-2.708h-2.682V9.598c0-.784.218-1.319 1.342-1.319h1.434V5.857a19.188 19.188 0 00-2.09-.107c-2.067 0-3.482 1.262-3.482 3.58v1.996h-2.338v2.708h2.338V21H4a1 1 0 01-1-1V4a1 1 0 011-1h16a1 1 0 011 1v16a1 1 0 01-1 1h-4.598z"></path>
+                    </svg>
+                </a>
+                <a href="https://github.com/thepracticaldev" target="blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="arc7dy4ck1bqr1n1wh8xwb7lrecb0xk3" class="crayons-icon"><title id="arc7dy4ck1bqr1n1wh8xwb7lrecb0xk3">Github</title>
+                        <path class="icon" d="M12 2C6.475 2 2 6.475 2 12a9.994 9.994 0 006.838 9.488c.5.087.687-.213.687-.476 0-.237-.013-1.024-.013-1.862-2.512.463-3.162-.612-3.362-1.175-.113-.288-.6-1.175-1.025-1.413-.35-.187-.85-.65-.013-.662.788-.013 1.35.725 1.538 1.025.9 1.512 2.338 1.087 2.912.825.088-.65.35-1.087.638-1.337-2.225-.25-4.55-1.113-4.55-4.938 0-1.088.387-1.987 1.025-2.688-.1-.25-.45-1.275.1-2.65 0 0 .837-.262 2.75 1.026a9.28 9.28 0 012.5-.338c.85 0 1.7.112 2.5.337 1.912-1.3 2.75-1.024 2.75-1.024.55 1.375.2 2.4.1 2.65.637.7 1.025 1.587 1.025 2.687 0 3.838-2.337 4.688-4.562 4.938.362.312.675.912.675 1.85 0 1.337-.013 2.412-.013 2.75 0 .262.188.574.688.474A10.016 10.016 0 0022 12c0-5.525-4.475-10-10-10z"></path>
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/thepracticaldev/" target="blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="atk7vsg0auxc665q8wga39hixghph1h1" class="crayons-icon"><title id="atk7vsg0auxc665q8wga39hixghph1h1">Instagram</title>
+                        <path class="icon" d="M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153.509.5.902 1.105 1.153 1.772.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 01-1.153 1.772c-.5.508-1.105.902-1.772 1.153-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 01-1.772-1.153 4.904 4.904 0 01-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 011.153-1.772A4.897 4.897 0 015.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2zm0 5a5 5 0 100 10 5 5 0 000-10zm6.5-.25a1.25 1.25 0 10-2.5 0 1.25 1.25 0 002.5 0zM12 9a3 3 0 110 6 3 3 0 010-6z"></path>
+                    </svg>
+                </a>                
+                <a href="https://www.twitch.tv/thepracticaldev" target="blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="a33l6kkw8t1bqk4d4th8clx4o92ym5ui" class="crayons-icon"><title id="a33l6kkw8t1bqk4d4th8clx4o92ym5ui">Twitch</title>
+                        <path class="icon" d="M4.3 3H21v11.7l-4.7 4.7h-3.9l-2.5 2.4H7v-2.4H3V6.2L4.3 3zM5 17.4h4v2.4h.095l2.5-2.4h3.877L19 13.872V5H5v12.4zM15 8h2v4.7h-2V8zm0 0h2v4.7h-2V8zm-5 0h2v4.7h-2V8z"></path>
+                    </svg>
+                </a>
+            </div>
+            <div>
+                <p class="text-center">
+                    <a href="https://dev.to/">DEV Community</a>– A constructive and inclusive social network for software developers. With you every step of your journey.
+                </p>
+            </div>
+            <div>
+                <p class="text-center">
+                    Built on <a href="https://www.forem.com/">Forem</a>  — the <a href="https://dev.to/t/opensource">open source </a> software that powers <a href="https://dev.to/">DEV</a>  and other inclusive communities. <br>
+                    Made with love and <a href="https://dev.to/t/rails">Ruby on Rails</a>. DEV Community © 2016 - 2021.
+                </p>
+            </div>
+            <div class="d-flex justify-content-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" role="img" aria-labelledby="afahspc1xf8ptnyxa2ixpj06bqvpnk4g" class="crayons-icon crayons-icon--default"><title id="afahspc1xf8ptnyxa2ixpj06bqvpnk4g">Forem logo</title>
+                    <g clip-path="url(#clip0)" fill="#1AB3A6">
+                        <path d="M4.603 1.438a8.056 8.056 0 017.643 5.478 8.543 8.543 0 00-3.023 5.968H8.054C3.606 12.884 0 9.296 0 4.87V1.468a.03.03 0 01.03-.03h4.573zM23.97 6.515a.03.03 0 01.03.03v2.833c0 4.11-3.354 7.442-7.491 7.442h-2.881v5.726h-2.305V14.53l.022-1.145c.294-3.843 3.526-6.87 7.469-6.87h5.155z"></path>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0">
+                            <path fill="#fff" d="M0 0h24v24H0z"></path>
+                        </clipPath>
+                    </defs>
+                </svg>
+            </div>
+        </div>
+        <div class="d-none d-lg-block">
+            <img class="ilustration" src="https://res.cloudinary.com/practicaldev/image/fetch/s--4RkRuwpj--/c_limit,f_auto,fl_progressive,q_auto,w_100/https://dev-to-uploads.s3.amazonaws.com/i/wmv3mtusjwb3r13d5h2f.png" alt="">
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</body>
+</html>
